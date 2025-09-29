@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Shanmugam - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 header-bg transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-800">DHINESH S</a>
+            <nav id="desktop-nav" class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-black transition duration-150 font-medium nav-link" data-section="home">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-black transition duration-150 font-medium nav-link" data-section="about">About</a>
+                <a href="#experience" class="text-gray-600 hover:text-black transition duration-150 font-medium nav-link" data-section="experience">Experience</a>
+                <a href="#skills" class="text-gray-600 hover:text-black transition duration-150 font-medium nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-black transition duration-150 font-medium nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-black transition duration-150 font-medium nav-link" data-section="contact">Contact</a>
+            </nav>
+            <button id="menu-button" class="md:hidden text-gray-800 hover:text-black">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        
+        <nav id="mobile-menu" class="hidden md:hidden pb-4 transition-all duration-300 bg-white">
+             <a href="#home" class="block py-2 px-6 text-gray-800 hover:bg-gray-100 nav-link" data-section="home">Home</a>
+            <a href="#about" class="block py-2 px-6 text-gray-800 hover:bg-gray-100 nav-link" data-section="about">About</a>
+            <a href="#experience" class="block py-2 px-6 text-gray-800 hover:bg-gray-100 nav-link" data-section="experience">Experience</a>
+            <a href="#skills" class="block py-2 px-6 text-gray-800 hover:bg-gray-100 nav-link" data-section="skills">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-gray-800 hover:bg-gray-100 nav-link" data-section="projects">Projects</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-800 hover:bg-gray-100 nav-link" data-section="contact">Contact</a>
+        </nav>
+        </header>
+
+    <main class="pt-20">
+        <section id="home" class="pt-20 pb-16 min-h-screen flex items-center justify-center text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="mb-8">
+                    <img src="https://i.postimg.cc/T2JC5MSX/Whats-App-Image-2025-09-29-at-15-57-20-972f287d.jpg" alt="Dinesh Shanmugam Profile" class="w-40 h-45 rounded-full mx-auto object-cover border-4 border-white shadow-lg">
+                </div>
+                
+                <h1 class="text-6xl sm:text-7xl font-extrabold text-gray-900 mb-4 leading-tight">DHINESH SHANMUGAM</h1>
+                
+                <p class="text-2xl font-semibold text-gray-800 mb-2">AI & Data Science Enthusiast</p>
+                <p class="text-xl font-medium text-gray-600 mb-8">Full-Stack Developer</p>
+                
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
+                    Passionate about building intelligent applications that bridge technology and creativity.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#projects" class="primary-btn font-semibold py-3 px-8 rounded-lg shadow-md">
+                        View My Projects
+                    </a>
+                    <a id="download-resume-btn" href="DHINESH CV.pdf" download="Dinesh_Shanmugam_Resume.pdf" class="secondary-btn font-semibold py-3 px-8 rounded-lg shadow-md">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="text-center mb-12 max-w-3xl mx-auto">
+                    <p class="text-gray-600 text-lg">
+                        AI & Data Science enthusiast with strong problem-solving skills and a passion for full-stack development. I'm dedicated to professional growth and building real-world applications that make a difference.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12 text-left">
+                    <div class="p-6 rounded-xl animated-card card-shadow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Key Strengths</h3>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>Problem-solving & Critical thinking</li>
+                            <li>Creative solution development</li>
+                            <li>Team collaboration & Leadership</li>
+                            <li>Commitment to excellence</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="p-6 rounded-xl animated-card card-shadow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Interests</h3>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>Building intelligent applications</li>
+                            <li>Exploring AI-driven solutions</li>
+                            <li>Full-stack development</li>
+                            <li>Machine learning research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="max-w-5xl mx-auto border-gray-200">
+
+        <section id="experience" class="py-20">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="section-title">Education & Experience</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Education</h3>
+                        
+                        <div class="p-6 mb-6 rounded-xl animated-card card-shadow">
+                            <h4 class="text-lg font-semibold text-gray-900">B-Tech in Artificial Intelligence & Data Science</h4>
+                            <p class="text-sm text-gray-500 italic mb-2">Jepdiaar Engineering College, Chennai</p>
+                            <p class="text-sm text-gray-500 mb-3">2022 – 2026 | CGPA: 8.02</p>
+                        </div>
+
+                        <div class="p-6 rounded-xl animated-card card-shadow">
+                            <h4 class="text-lg font-semibold text-gray-900">Higher Secondary</h4>
+                            <p class="text-sm text-gray-500 italic mb-2">Little Flower Matric HR Sec School, Chennai</p>
+                            <p class="text-sm text-gray-500 mb-3">2020 – 2022</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Experience</h3>
+                        
+                        <div class="p-6 rounded-xl animated-card card-shadow">
+                            <h4 class="text-lg font-semibold text-gray-900">Machine Learning Engineer Intern</h4>
+                            <p class="text-sm text-gray-500 italic mb-2">Trios Technologies Pvt Ltd</p>
+                            <p class="text-sm text-gray-500 mb-3">June 2024 – July 2024</p>
+                            <ul class="space-y-2 text-gray-600 list-disc list-inside pl-4">
+                                <li>Developed ML models using Linear Regression and Classification.</li>
+                                <li>Gained hands-on experience with Python, NumPy, and Pandas.</li>
+                                <li>Completed a comprehensive project and received certification.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="max-w-5xl mx-auto border-gray-200">
+
+        <section id="skills" class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="section-title">Skills & Services</h2>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="p-6 rounded-xl animated-card card-shadow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Technical Skills</h3>
+                        
+                        <div class="space-y-4 text-gray-600">
+                            <div class="pb-2 border-b border-gray-200">
+                                <p class="font-semibold text-gray-700">Programming</p>
+                                <p class="text-sm">Python, SQL, Java <span class="text-xs text-gray-600">(in progress)</span></p>
+                            </div>
+                            <div class="pb-2 border-b border-gray-200">
+                                <p class="font-semibold text-gray-700">Frontend</p>
+                                <p class="text-sm">HTML, CSS, JavaScript</p>
+                            </div>
+                            <div class="pb-2 border-b border-gray-200">
+                                <p class="font-semibold text-gray-700">Frameworks</p>
+                                <p class="text-sm">Bootstrap, React <span class="text-xs text-gray-600">(in progress)</span></p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-700">Data Science</p>
+                                <p class="text-sm">NumPy, Pandas, Machine Learning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-xl animated-card card-shadow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Services</h3>
+                        
+                        <div class="space-y-4 text-gray-600">
+                            <div class="pb-2 border-b border-gray-200">
+                                <p class="font-semibold text-gray-700">AI-Powered Solutions</p>
+                                <p class="text-sm">Chatbots, LLM integrations, intelligent applications</p>
+                            </div>
+                            <div class="pb-2 border-b border-gray-200">
+                                <p class="font-semibold text-gray-700">Full-Stack Development</p>
+                                <p class="text-sm">Modern web applications with React and JavaScript</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-700">Data Analysis</p>
+                                <p class="text-sm">Data visualization and insights with Python</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-gray-800 text-center mb-6 pt-4">Soft Skills</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="soft-skill-pill">Project Management</span>
+                    <span class="soft-skill-pill">Team Leadership</span>
+                    <span class="soft-skill-pill">Communication</span>
+                    <span class="soft-skill-pill">Time Management</span>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="max-w-5xl mx-auto border-gray-200">
+
+        <section id="projects" class="py-20">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="section-title">Featured Projects</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="p-6 rounded-xl bg-white card-shadow animated-card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Multilingual Chatbot</h3>
+                        <p class="text-gray-600 mb-4 text-sm">AI chatbot using Streamlit, LangChain, and Groq/Gemini models. Supports multiple languages for accessible communication.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">Python</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">LangChain</span>
+                        </div>
+                        <a href="https://multilanguage-chatbot.streamlit.app/" class="inline-block text-gray-800 font-semibold hover:underline transition duration-150">View Project</a>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-white card-shadow animated-card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">PDF Analyzer (Notepad LLM)</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Smart PDF analyzer app powered by LLMs for extracting, summarizing, and analyzing document content efficiently.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">Python</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">LLM</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">NLP</span>
+                        </div>
+                        <a href="https://chatbot001.streamlit.app/" class="inline-block text-gray-800 font-semibold hover:underline transition duration-150">View Project</a>
+                    </div>
+                    
+                    <div class="p-6 rounded-xl bg-white card-shadow animated-card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Login Page Interface</h3>
+                        <p class="text-gray-600 mb-4 text-sm">A responsive and user-friendly login interface built with HTML, CSS, and JavaScript featuring modern design patterns.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">HTML</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">CSS</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/DHINESH0123/Frontend-Project2" class="inline-block text-gray-800 font-semibold hover:underline transition duration-150">View Project</a>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-white card-shadow animated-card">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Screen Loader Animation</h3>
+                        <p class="text-gray-600 mb-4 text-sm">A smooth, animated loading screen designed for modern web applications with engaging visual effects.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">CSS</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">Animation</span>
+                            <span class="text-xs font-medium text-white bg-gray-800 px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/DHINESH0123/Frontend-project1" class="inline-block text-gray-800 font-semibold hover:underline transition duration-150">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="max-w-5xl mx-auto border-gray-200">
+
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="text-lg text-gray-600 mb-12">Let's collaborate on exciting projects and bring innovative ideas to life.</p>
+
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div class="p-6 rounded-xl animated-card card-shadow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-3 text-gray-600">
+                            <p class="flex items-center">
+                                <i data-lucide="mail" class="w-5 h-5 mr-3 text-gray-800"></i>
+                                <a href="mailto:dinesh0021@gmail.com" class="hover:text-black">dinesh0021@gmail.com</a>
+                            </p>
+                            <p class="flex items-center">
+                                <i data-lucide="phone" class="w-5 h-5 mr-3 text-gray-800"></i>
+                                <span>+91 7305241434</span>
+                            </p>
+                            <p class="flex items-center">
+                                <i data-lucide="linkedin" class="w-5 h-5 mr-3 text-gray-800"></i>
+                                <a href="https://www.linkedin.com/in/dhinesh-shanmugam-711531264/" class="hover:text-black">LinkedIn Profile</a>
+                            </p>
+                            <p class="flex items-center">
+                                <i data-lucide="github" class="w-5 h-5 mr-3 text-gray-800"></i>
+                                <a href="https://github.com/DHINESH0123" class="hover:text-black">GitHub Profile</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-xl animated-card card-shadow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Certifications</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-semibold text-gray-700">Data Analytics with Python</p>
+                                <p class="text-sm text-gray-500">NPTEL Certification</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-700">Blockchain and its Applications</p>
+                                <p class="text-sm text-gray-500">NPTEL Certification</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-700">React.js & Java</p>
+                                <p class="text-sm text-gray-500">Currently Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a id="contact-mail-btn" href="mailto:dinesh0021@gmail.com" class="primary-btn inline-block mt-12 font-semibold py-3 px-10 rounded-lg shadow-lg">
+                    Start a Conversation
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 border-t border-gray-200 text-center bg-white">
+        <p class="text-sm text-gray-500">
+            &copy; 2024 Dinesh Shanmugam. Built with passion and cutting-edge technology.
+        </p>
+    </footer>
+
+    <div id="loading-overlay" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-white/95 transition-opacity duration-300">
+        <div class="loader">
+            <div class="Box"></div>
+            <div class="Box"></div>
+            <div class="Box"></div>
+            <div class="Box"></div>
+            <div class="Box"></div>
+        </div>
+    </div>
+
+    <script src="Portfolio.js"></script>
+</body>
+</html>
