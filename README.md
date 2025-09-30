@@ -57,10 +57,7 @@ Simply open the Portfolio.html file in your web browser of choice. Since this is
 📞 Connect with Me
 I'm always open to discussing new opportunities, collaborations, or innovative projects!
 
-Platform	Link/Details
-Email	dinesh0021@gmail.com
-LinkedIn	Dhinesh Shanmugam
-GitHub	DHINESH0123
-Phone	+91 7305241434
+Email:dinesh0021@gmail.com
+LinkedIn:Dhinesh Shanmugam
+GitHub:DHINESH0123
 
-Export to Sheets
