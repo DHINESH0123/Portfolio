@@ -1,0 +1,195 @@
+.about {
+  background: var(--color-ivory-light);
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+/* Photo column */
+.about__photo-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  position: sticky;
+  top: 100px;
+}
+
+.about__photo-wrap {
+  position: relative;
+}
+
+.about__photo {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
+.about__photo-badge {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-navy);
+  color: var(--color-ivory);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+}
+
+/* Quick card */
+.about__quick-card {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background: var(--color-surface-raised);
+}
+
+.about__quick-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about__quick-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about__quick-label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.about__quick-value {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-navy);
+  text-align: right;
+}
+
+/* Text column */
+.about__text-col {
+  padding-top: var(--space-4);
+}
+
+.about__heading {
+  margin-bottom: var(--space-2);
+}
+
+.about__para {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-5);
+}
+
+/* Highlights */
+.about__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.about__highlight-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-navy);
+  box-shadow: var(--shadow-xs);
+  transition: all var(--transition-fast);
+}
+
+.about__highlight-chip:hover {
+  border-color: var(--color-border-gold);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-2px);
+}
+
+/* ── Responsive Breakpoints ────────────────────────────── */
+
+/* Small Laptop & Tablet Landscape (≤1024px) */
+@media (max-width: 1024px) {
+  .about__inner {
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-10);
+  }
+  .about__photo {
+    height: 340px;
+  }
+  /* Remove sticky so it doesn't conflict with scroll at this width */
+  .about__photo-col {
+    position: static;
+  }
+}
+
+/* Tablet Portrait (≤768px) — hide sidebar photo, show only text */
+@media (max-width: 768px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  /* Profile photo already visible in Hero; hide duplicate here */
+  .about__photo-col {
+    display: none;
+  }
+  .about__text-col {
+    padding-top: var(--space-2);
+  }
+}
+
+/* Mobile Phones (≤480px) */
+@media (max-width: 480px) {
+  .about__highlights {
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+  }
+  .about__highlight-chip {
+    font-size: var(--text-xs);
+    padding: var(--space-1) var(--space-3);
+  }
+  .about__para {
+    font-size: var(--text-sm);
+    margin-top: var(--space-4);
+  }
+}
+
+/* Ultra-compact (≤360px) */
+@media (max-width: 360px) {
+  .about__highlights {
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .about__highlight-chip {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
+
+

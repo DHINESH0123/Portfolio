@@ -1,0 +1,106 @@
+.skills {
+  background: var(--color-ivory);
+}
+
+.skills__heading {
+  margin-bottom: var(--space-2);
+}
+
+.skills__categories {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  margin-top: var(--space-10);
+}
+
+.skills__category {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-8);
+  align-items: start;
+  padding-bottom: var(--space-10);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skills__category:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.skills__cat-title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-navy);
+  line-height: var(--leading-snug);
+  padding-top: var(--space-1);
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.skills__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-surface-raised);
+  border: 1.5px solid var(--color-border);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-navy);
+  cursor: default;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+}
+
+.skills__tag:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold-dark);
+  background: rgba(184, 154, 90, 0.06);
+}
+
+/* ── Responsive Breakpoints ────────────────────────────── */
+
+/* Tablet Portrait (≤768px) — stack label above tags */
+@media (max-width: 768px) {
+  .skills__category {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+/* Mobile Phones (≤480px) */
+@media (max-width: 480px) {
+  .skills__categories {
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+  }
+  .skills__category {
+    gap: var(--space-3);
+    padding-bottom: var(--space-6);
+  }
+  .skills__tags {
+    gap: var(--space-2);
+  }
+  .skills__tag {
+    font-size: var(--text-xs);
+    padding: var(--space-1) var(--space-3);
+  }
+}
+
+/* Ultra-compact (≤360px) */
+@media (max-width: 360px) {
+  .skills__cat-title {
+    font-size: var(--text-sm);
+  }
+  .skills__tag {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+}
+
+
